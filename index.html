@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="percentage-cal">
+            <div class="left">
+                <form>
+                    <div>
+                        <label for="text">Enter your amount of money</label>
+                        <input type="number" id="money" placeholder="100">
+                    </div>
+                    <div>
+                        <label for="text">Enter percentage</label>
+                        <input type="number" id="percentage" placeholder="25%">
+                        <button type="submit">calculate</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <div>
+                    <h3>Your amount of money</h3>
+                    <p><span id="showPercentage">25</span>% of <span id="showMoney">100</span></p>
+                    <h1 id="showPercentMoney">BDT 25.00</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

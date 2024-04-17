@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.percentage-cal{
+    border: 1px solid rgb(163, 160, 160);
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    background-color: #f2f2f3;
+}
+
+.percentage-cal .left form div{
+    display: flex;
+    flex-direction: column;
+}
+.percentage-cal .left form div label{
+    margin-bottom: 4px;
+    color: rgb(50, 49, 51)
+}
+.percentage-cal .left form div button{
+    width:fit-content;
+    padding: 10px 20px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #5c5c5c1a;
+    color: #000;
+}
+
+.percentage-cal .left form div input{
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.percentage-cal .right div h3{
+    text-transform: uppercase;
+}
+.percentage-cal .right div p{
+    color: grey;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 512px){
+    .percentage-cal{
+        flex-direction: column;
+    }
+}
